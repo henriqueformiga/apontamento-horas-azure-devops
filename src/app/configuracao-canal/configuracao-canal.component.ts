@@ -38,7 +38,7 @@ import * as Papa from 'papaparse';
     MatSnackBarModule,
     NgClass,
     DecimalPipe
-    
+
   ],
 })
 export class ConfiguracaoCanalComponent implements OnInit {
@@ -66,10 +66,6 @@ export class ConfiguracaoCanalComponent implements OnInit {
 
   onDragOver(event: DragEvent) {
     event.preventDefault();
-  }
-
-  onDragLeave(event: DragEvent) {
-    // Se quiser, pode adicionar algum efeito visual aqui
   }
 
   private processarCsv(file: File) {
@@ -111,7 +107,6 @@ export class ConfiguracaoCanalComponent implements OnInit {
 
     this.processarCsv(file);
 
-    // Limpa o valor do input para permitir reupload do mesmo arquivo
     input.value = '';
   }
 
